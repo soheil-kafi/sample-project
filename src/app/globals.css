@@ -1,26 +1,57 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* scroll bar */
+::-webkit-scrollbar {
+  width: 1px;
+  background-color: #393e46;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffd369;
+  border-radius: 10px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.primary-color {
+  color: #222831 !important;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.secondary-color {
+  color: #393e46 !important;
 }
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.text-color {
+  color: #ffd369 !important;
+}
+.light-color {
+  color: #eeeeee !important;
+}
+.bg-primary-color {
+  background-color: #222831 !important;
+}
+.bg-secondary-color {
+  background-color: #393e46 !important;
+}
+.bg-text-color {
+  background-color: #ffd369 !important;
+}
+.bg-light-color {
+  background-color: #eeeeee !important;
+}
+.active button {
+  background-color: #ffd369 !important;
+  color: #393e46 !important;
+}
+a {
+  text-decoration: none;
+}
+.active button:hover button {
+  opacity: 0.9 !important;
+}
+td,
+tbody,
+tfoot,
+th,
+thead,
+tr {
+  text-align: center !important;
 }
