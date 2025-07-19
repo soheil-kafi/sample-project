@@ -2,11 +2,13 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Button, Paper, Typography } from "@mui/material";
+import AddUser from "./add-user";
 
 export default function AnimatedUsers({ data }) {
   return (
     <>
-      {data.map((user, i) => (
+      <AddUser />
+      {data.map((user) => (
         <motion.div
           key={user.id}
           initial={{ opacity: 0, y: 30 }}

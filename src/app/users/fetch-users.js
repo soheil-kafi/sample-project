@@ -2,7 +2,7 @@ import { BASE_URL } from "../api/users";
 
 import AnimatedUsers from "./animated";
 export default async function FetchUsers() {
-  const response = await fetch(BASE_URL);
+  const response = await fetch(BASE_URL, { cache: "no-store" });
   const data = await response.json();
   return (
     <ul className="grid gap-3">
