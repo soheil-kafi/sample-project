@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
-import { salt } from "./app/api/login/route";
 import { jwtVerify } from "jose";
 
+const salt = new TextEncoder().encode("probablyThereIsNoHero");
 export async function middleware(req: NextRequest) {
   const token = req.cookies?.get("token")?.value?.trim();
   if (req.nextUrl.pathname.startsWith("/admin")) {

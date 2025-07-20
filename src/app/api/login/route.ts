@@ -1,7 +1,7 @@
 import { SignJWT } from "jose";
 import { NextResponse } from "next/server";
 
-export const salt = new TextEncoder().encode("probablyThereIsNoHero");
+const salt = new TextEncoder().encode("probablyThereIsNoHero");
 export async function POST(req: Request) {
   const { username, password } = await req.json();
   if (username == "admin" && password == "1234") {
