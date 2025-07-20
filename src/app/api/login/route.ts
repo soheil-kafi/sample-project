@@ -1,7 +1,7 @@
 import { SignJWT } from "jose";
 import { NextResponse } from "next/server";
 
-export const secret = new TextEncoder().encode("probablyThereIsNoHero");
+export const salt = new TextEncoder().encode("probablyThereIsNoHero");
 export async function POST(req: Request) {
   const { username, password } = await req.json();
   if (username == "admin" && password == "1234") {
@@ -10,7 +10,7 @@ export async function POST(req: Request) {
     })
       .setProtectedHeader({ alg: "HS256" })
       .setExpirationTime("1h")
-      .sign(secret);
+      .sign(salt);
     const res = NextResponse.json({ success: true });
     res.cookies.set("token", token, {
       httpOnly: true,
