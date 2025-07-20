@@ -19,15 +19,15 @@ export default function Navigator() {
                 <Typography variant="button">users</Typography>
               </Button>
             </Link>
-            {/* <Link href="/2">
+            <Link href="/login">
               <Button
                 size="small"
                 variant="contained"
-                className="light-color bg-primary-color"
+                className={`light-color bg-primary-color`}
               >
-                <Typography variant="button">salam</Typography>
+                <Typography variant="button">login</Typography>
               </Button>
-            </Link> */}
+            </Link>
             {/* <Link href="/3">
               <Button
                 size="small"
