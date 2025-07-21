@@ -1,6 +1,7 @@
 import { Container, Button, Typography } from "@mui/material";
 
 import Link from "next/link";
+import LoginButton from "./LoginButton";
 export default function Navigator() {
   return (
     <header className="w-full bg-secondary-color text-color py-3">
@@ -19,15 +20,7 @@ export default function Navigator() {
                 <Typography variant="button">users</Typography>
               </Button>
             </Link>
-            <Link href="/login">
-              <Button
-                size="small"
-                variant="contained"
-                className={`light-color bg-primary-color`}
-              >
-                <Typography variant="button">login</Typography>
-              </Button>
-            </Link>
+            <LoginButton />
             {/* <Link href="/3">
               <Button
                 size="small"

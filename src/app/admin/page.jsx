@@ -1,10 +1,12 @@
 import { Typography } from "@mui/material";
 import { cookies } from "next/headers";
+import SetLogin from "./SetLogin";
 export default async function AdminPage() {
   const cookieStore = await cookies();
 
   return (
     <div className="bg-secondary-color light-color rounded-lg mt-2 p-3">
+      <SetLogin />
       <Typography variant="h6">
         this is the admin page , but there is not to much to do , yes now you
         access the admin rout but.... you cant do anything special , so let me
