@@ -11,6 +11,15 @@ export default function Navigator() {
             <h1 className=" text-2xl">soheil kafi</h1>
           </a>
           <div className=" text-2xl  flex justify-between gap-3">
+            <Link href="/">
+              <Button
+                size="small"
+                variant="contained"
+                className="light-color bg-primary-color"
+              >
+                <Typography variant="button">Home</Typography>
+              </Button>
+            </Link>
             <Link href="/users">
               <Button
                 size="small"
@@ -21,15 +30,7 @@ export default function Navigator() {
               </Button>
             </Link>
             <LoginButton />
-            {/* <Link href="/3">
-              <Button
-                size="small"
-                variant="contained"
-                className="light-color bg-primary-color"
-              >
-                <Typography variant="button">salam</Typography>
-              </Button>
-            </Link> */}
+
             {/* <Link href="/4">
               <Button
                 size="small"

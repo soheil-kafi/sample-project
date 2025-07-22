@@ -1,12 +1,13 @@
 # Installation
 
-first make sure you have download the node and :
+first make sure you have download the node then :
 
 ```bash
 npm i
 npm run dev
 ```
 
+this will download dependencies
 and you will se something like this
 
 ```bash

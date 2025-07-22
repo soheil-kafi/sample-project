@@ -1,3 +1,8 @@
+import Main from "./Home/main";
 export default function Home() {
-  return <div>click the tabs to see my works</div>;
+  return (
+    <div>
+      <Main />
+    </div>
+  );
 }
