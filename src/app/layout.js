@@ -3,6 +3,7 @@ import "./globals.css";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 import theme from "./../theme";
 import Navigator from "./components/navigator/navigator";
+import Footer from "./components/footer/footer";
 export const metadata = {
   title: "soheil-kafi",
   description: "sample project by sohiel",
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
           <ThemeProvider theme={theme}>
             <Navigator />
             <Container>{children}</Container>
+            <Footer />
           </ThemeProvider>
         </AppRouterCacheProvider>
       </body>
